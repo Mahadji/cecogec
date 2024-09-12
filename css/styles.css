@@ -1,0 +1,209 @@
+/* Global Styles */
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: slideIn 2s ease-in-out;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    animation: slideIn 2s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.text-orange {
+    color: #ff7f00; /* Couleur orange de Suncom */
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #e3e6f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-footer {
+    background-color: #f8f9fc;
+    border-top: 1px solid #e3e6f0;
+}
+
+/* Sidebar Styles */
+#wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px;
+    margin-left: -250px;
+    transition: margin 0.25s ease-out;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#page-content-wrapper {
+    width: 100%;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.sidebar-heading {
+    padding: 1rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+/* Service Row Styles */
+.service-row {
+    margin-bottom: 3rem;
+}
+
+.service-row img {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.service-row h2, .service-row p {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.img-fluid {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ff7f00;
+    border-radius: 10px;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .order-md-1 {
+        order: 1;
+    }
+    .order-md-2 {
+        order: 2;
+    }
+}
+.form-group label {
+    font-weight: bold;
+}
+
+#results {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#results h2 {
+    color: #ff7f00;
+    margin-bottom: 20px;
+}
+
+#results p {
+    font-size: 1.2rem;
+}
+
+/* Styles pour les formulaires */
+.form-control {
+    border: 1px solid #ff7f00;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #ff7f00;
+    border-color: #ff7f00;
+}
+
+.btn-primary:hover {
+    background-color: #e56d00;
+    border-color: #e56d00;
+}
